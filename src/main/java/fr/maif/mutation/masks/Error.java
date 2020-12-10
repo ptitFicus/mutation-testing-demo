@@ -1,4 +1,4 @@
-package fr.maif.mutation;
+package fr.maif.mutation.masks;
 
 public enum Error {
     NOT_ENOUGH_MONEY,

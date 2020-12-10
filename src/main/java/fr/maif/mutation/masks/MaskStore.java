@@ -1,4 +1,4 @@
-package fr.maif.mutation;
+package fr.maif.mutation.masks;
 
 public class MaskStore {
     public final int price;
