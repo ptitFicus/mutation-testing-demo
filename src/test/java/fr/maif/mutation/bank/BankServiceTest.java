@@ -4,6 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
+import static org.assertj.core.api.AssertionsForClassTypes.assertThatThrownBy;
 
 
 public class BankServiceTest {
@@ -22,11 +23,11 @@ public class BankServiceTest {
                 .isEqualTo(75);
     }
 
+    @Test
     public void overdrawTest() {
-
     }
 
+    @Test
     public void limitTest() {
-
     }
 }
