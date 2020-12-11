@@ -12,15 +12,21 @@ public class BankServiceTest {
 
     @Before
     public void setup() {
+        bankService = new BankService();
+        bankService.open("benjamin", 100);
+    }
+
+    @Test
+    public void simpleTest() {
+        assertThat(bankService.withdraw("benjamin", 25))
+                .isEqualTo(75);
+    }
+
+    public void overdrawTest() {
 
     }
 
-@Test
-public void simpleTest() {
-    BankService bankService = new BankService();
-    bankService.open("benjamin", 100);
+    public void limitTest() {
 
-    assertThat(bankService.withdraw("benjamin", 25))
-            .isEqualTo(75);
-}
+    }
 }
