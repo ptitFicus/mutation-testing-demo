@@ -12,8 +12,8 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>15</maven.compiler.source>
-    <maven.compiler.target>15</maven.compiler.target>
+    <maven.compiler.source>16</maven.compiler.source>
+    <maven.compiler.target>16</maven.compiler.target>
   </properties>
 
   <dependencies>
@@ -39,8 +39,6 @@
       <artifactId>asm</artifactId>
       <version>7.0</version>
     </dependency>
-
-
   </dependencies>
 
 <build>
@@ -49,7 +47,7 @@
         <!-- mvn org.pitest:pitest-maven:mutationCoverage -->
         <groupId>org.pitest</groupId>
         <artifactId>pitest-maven</artifactId>
-        <version>1.6.1</version>
+        <version>1.7.0</version>
         <configuration>
           <mutators>
             <mutator>DEFAULTS</mutator>
